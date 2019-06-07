@@ -10,7 +10,6 @@ OBJS += utils/utils.o
 OBJS += utils/color_cache_utils.o
 OBJS += utils/filters_utils.o
 OBJS += utils/random_utils.o
-OBJS += main.o
 OBJS += dec/io_dec.o
 OBJS += dec/frame_dec.o
 OBJS += dec/tree_dec.o
@@ -84,6 +83,10 @@ OBJS += dsp/lossless_enc_mips32.o
 OBJS += dsp/yuv_mips32.o
 OBJS += dsp/upsampling_mips_dsp_r2.o
 OBJS += dsp/dec_msa.o
+
+OBJS += main.o
+OBJS += qdbmp/qdbmp.o
+
 CFLAGS+= -DPRINT_MEM_INFO
 
 BIN = main
